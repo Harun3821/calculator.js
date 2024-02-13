@@ -37,38 +37,44 @@
                 <button onclick="culcatTraiangle()" class="btn btn-primary w-full">calculat</button>
               </div>
             </div>
-          </div>
+        </div>
 
           <div class="card lg:w-96 w-64 bg-base-100 shadow-xl mt-4">
-            <figure><img src="images/parallelogram.png"></figure>
+            <figure><img src="images/rectangle.png"></figure>
             <div class="card-body">
-              <h2 class="card-title">triangle</h2>
+              <h2 class="card-title">Rectangle</h2>
               <p>Area (A) = 0.5 X b x h</p>
               <div>
-                <input class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none"  type="text" placeholder="b">
+                <input id="Rectangle-input"  class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none"  type="text" placeholder="b">
                 <span class="mr-4 ml-2">cm</span>
-                <input class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none" type="text" placeholder="h">
+                <input id="Rectangle-hight" class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none" type="text" placeholder="h">
                 <span class="mr-4 ml-2">cm</span>
               </div>
+              <div>
+                <p class="text-2xl">Area: <span id="Rectangle-area">cm<sup>2</sup></span></p>
+             </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">calculat</button>
+                <button onclick="RectangleBas()" class="btn btn-primary w-full">calculat</button>
               </div>
             </div>
           </div>
 
           <div class="card lg:w-96  w-64 bg-base-100 shadow-xl mt-6">
-            <figure><img src="images/pentagon.png"></figure>
+            <figure><img src="images/parallelogram.png"></figure>
             <div class="card-body">
-              <h2 class="card-title">triangle</h2>
+              <h2 class="card-title">Parallelogram</h2>
               <p>Area (A) = 0.5 X b x h</p>
               <div>
-                <input class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none"  type="text" placeholder="b">
+                <input id="Parallelogram-Bass"  class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none"  type="text" placeholder="b">
                 <span class="mr-4 ml-2">cm</span>
-                <input class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none" type="text" placeholder="h">
+                <input id="Parallelogram-hight" class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none" type="text" placeholder="h">
                 <span class="mr-4 ml-2">cm</span>
               </div>
+              <div>
+                <p class="text-2xl">Area: <span id="Parallelogram-Areey">cm<sup>2</sup></span></p>
+             </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">calculat</button>
+                <button onclick="Parallelogram()" class="btn btn-primary w-full">calculat</button>
               </div>
             </div>
           </div>
@@ -80,20 +86,20 @@
               <h2 class="card-title">triangle</h2>
               <p>Area (A) = 0.5 X b x h</p>
               <div>
-                <input class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none"  type="text" placeholder="b">
+                <input id="Pentagon-bass" class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none"  type="text" placeholder="b">
                 <span class="mr-4 ml-2">cm</span>
-                <input class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none" type="text" placeholder="h">
+                <input id="Pentagon-Hight" class="w-24 text-2xl p-2 rounded-sm bg-slate-100 outline-none" type="text" placeholder="h">
                 <span class="mr-4 ml-2">cm</span>
               </div>
-              
+              <div>
+                <p class="text-2xl">Area: <span id="Pentagon-area">cm<sup>2</sup></span></p>
+             </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">calculat</button>
+                <button onclick="Pentagon()" class="btn btn-primary w-full">calculat</button>
               </div>
             </div>
           </div>
-
-          
-        </div>
+         </div>
     
   
   
@@ -104,7 +110,7 @@
 
     </main>
 
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
+    
 </body>
 </html>
